@@ -25,7 +25,7 @@ x-defaults: &defaults
   volumes:
     - sentry-data:/var/lib/sentry/files
     - ./config.yml:/etc/sentry/config.yml
-
+    - ./code/integration.py:/usr/local/lib/python2.7/site-packages/sentry/integrations/slack/integration.py
 
 services:
   smtp:

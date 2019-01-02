@@ -7,14 +7,14 @@
 # Mail Server #
 ###############
 
-# mail.backend: 'smtp'  # Use dummy if you want to disable email entirely
-# mail.host: 'localhost'
-# mail.port: 25
-# mail.username: ''
-# mail.password: ''
-# mail.use-tls: false
+mail.backend: 'django.core.mail.backends.smtp.EmailBackend'  # Use dummy if you want to disable email entirely
+mail.host: 'smtp.sendgrid.net'
+mail.port: 587
+mail.username: 'apikey'
+mail.password: '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'
+mail.use-tls: true
 # The email address to send on behalf of
-# mail.from: 'root@localhost'
+mail.from: 'on-reply@20scoops.net'
 
 # If you'd like to configure email replies, enable this.
 # mail.enable-replies: false
@@ -62,6 +62,6 @@
 #   secret_key: 'XXXXXXX'
 #   bucket_name: 's3-bucket-name'
 
-slack.client-id: '504329713139.505803717879'
-slack.client-secret: 'b9d20776478cf1a209a6c9625dbd299e'
-slack.verification-token: 'xk568Np2Tj3UKAMdMsGxWtJe'
+slack.client-id: '125959159360.507395106883'
+slack.client-secret: '36a1418111670a1f54196b26702ea638'
+slack.verification-token: 'r4FWBRb0BW5HVX0bCut6d3kh'
