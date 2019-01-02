@@ -5,7 +5,7 @@ Official bootstrap for running your own [Sentry](https://sentry.io/) with [Docke
 ## Requirements
 
  * Docker 1.10.0+
- * Compose 1.6.0+ _(optional)_
+ * Compose 1.6.0+
 
 ## Up and Running
 
@@ -14,6 +14,7 @@ will get you up and running in no time!
 
 There may need to be modifications to the included `docker-compose.yml` file to accommodate your needs or your environment. These instructions are a guideline for what you should generally do.
 
+0. Mail setting [Sendgrid](https://www.sendgrid.com/) API key to `mail.password` in file `config.yml`
 1. `docker volume create --name=sentry-data && docker volume create --name=sentry-postgres` - Make our local database and sentry volumes
     Docker volumes have to be created manually, as they are declared as external to be more durable.
 2. `cp -n .env.example .env` - create env config file
